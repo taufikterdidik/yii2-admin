@@ -16,6 +16,7 @@
         {
             "name": "Taufik Fahrudin",
             "email": "mr@taufik.my.id"
+        }
     ],
     "minimum-stability": "dev",
     "require": {
