@@ -172,7 +172,7 @@ class Configs extends \mdm\admin\BaseObject
     public static function __callStatic($name, $arguments)
     {
         $instance = static::instance();
-        if ($instance->hasProperty($name)) {
+        if (property_exists($instance, $name) || $instance->canGetProperty($name)) {
             return $instance->$name;
         } else {
             if (count($arguments)) {
